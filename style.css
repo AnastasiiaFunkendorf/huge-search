@@ -1,0 +1,125 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: all .2s ease-in;
+}
+
+.allinfo,
+.people,
+.popular,
+.recent,
+.in,
+p {
+	overflow: hidden;
+}
+
+body {
+    padding:0;
+    margin:0;
+    font-family:  Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #c2c2c2;
+}
+
+main {
+	margin: 0 auto;
+	padding-bottom: 10%;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #f1f1f1f1;
+}
+
+.searchform,
+.allinfo {
+	display: block;
+	margin: 0 auto;
+	padding-top: 2%;
+	width: 80%;
+}
+
+.search-input {
+	width: 85%;
+	font-size: 85px;
+	font-weight: 700;
+	border: none;
+	background: transparent;
+	color: #ec5a62;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+	display: none; 
+	} /*Я догадываюсь, что эта конструкция скорее всего не ок решение, но иначе у меня не получилось убрать долбанный синий крестик из конструкции формы.
+	Буду очень признательна за пояснения адекватного для данного случая решения))) */
+
+
+::-webkit-input-placeholder {
+    color: #c2c2c2;
+}
+
+input:focus{
+    outline: none;
+}
+
+.search-submit {
+	border: none;
+	background: transparent;
+}
+
+.searchimg {
+	width: 50%;
+	height: 50%;
+	opacity: 0.7;
+}
+
+.searchimg:hover {
+	opacity: 1;
+	width: 60%;
+	height: 60%;
+}
+
+.people,
+.popular,
+.recent {
+	display: inline-block;
+	width: 29%;
+	background: transparent;
+}
+
+.popular,
+.recent {
+	margin-left: 4.3%;
+}
+
+.in {
+	background: rgba(118,117,128,0.05);
+	margin-top: 2%; 
+}
+
+p {
+	display: inline-block;
+	margin: 0;
+	padding-bottom: 7%;
+}
+
+img.peoplein,
+img.popularin,
+img.recentin {
+	margin: 2%;
+}
+
+img.peoplein {
+	border-radius: 50%;
+}
+
+.in:hover {
+	background: rgba(118,117,128,0.1);
+	color:  #ec5a62;
+}
